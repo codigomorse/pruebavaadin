@@ -1,4 +1,4 @@
-package com.omar.prueba1;
+package com.perceptiva;
 
 import javax.servlet.annotation.WebServlet;
 
