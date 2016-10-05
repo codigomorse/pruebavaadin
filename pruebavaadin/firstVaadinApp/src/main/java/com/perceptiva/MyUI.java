@@ -2,7 +2,6 @@ package com.perceptiva;
 
 import javax.servlet.annotation.WebServlet;
 
-import com.perceptiva.test.FirstDesignImpl;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.navigator.Navigator;
@@ -26,7 +25,7 @@ public class MyUI extends UI {
 	protected void init(VaadinRequest vaadinRequest) {
         Navigator navigator = new Navigator(this,this);
         
-        navigator.addView("firstDesign", new FirstDesignImpl());
+        navigator.addView("firstDesign", new firstDesign());
         
         navigator.navigateTo("firstDesign");
         
