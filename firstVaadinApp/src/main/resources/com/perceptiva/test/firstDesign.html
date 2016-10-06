@@ -5,14 +5,23 @@
  </head> 
  <body> 
   <vaadin-vertical-layout size-full> 
-   <vaadin-horizontal-layout size-full _id="hl" :expand> 
+   <vaadin-horizontal-layout width-full _id="hl"> 
+    <vaadin-label size-auto plain-text _id="lblNombre">
+      Nombre 
+    </vaadin-label> 
+    <vaadin-combo-box item-caption-mode="id"> 
+     <option>Option 1</option> 
+     <option>Option 2</option> 
+     <option>Option 3</option> 
+    </vaadin-combo-box> 
     <vaadin-button plain-text _id="btn1">
       Button 
     </vaadin-button> 
-    <vaadin-button plain-text _id="btn2">
-      Button 
-    </vaadin-button> 
+    <vaadin-label size-auto plain-text _id="lblUsuario">
+      Usuario 
+    </vaadin-label> 
    </vaadin-horizontal-layout> 
+   <vaadin-table caption="Cosas para mostrar" _id="tblCosas1" :middle></vaadin-table> 
   </vaadin-vertical-layout>  
  </body>
 </html>

@@ -1,5 +1,9 @@
 package com.perceptiva.test;
 
+import java.io.File;
+
+import com.vaadin.data.Container;
+import com.vaadin.data.util.FilesystemContainer;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Button.ClickEvent;
@@ -19,6 +23,9 @@ public class FirstDesignImpl extends firstDesign implements View {
 				
 			}
 		});
+		
+		Container newDataSource= new FilesystemContainer(new File("/Users/omar/Documents/sourceTree"));
+		tblCosas1.setContainerDataSource(newDataSource);
 	}
 
 	@Override
