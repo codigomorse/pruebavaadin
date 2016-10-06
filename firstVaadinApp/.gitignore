@@ -1,0 +1,6 @@
+/target/
+/.designer/
+/.settings/
+/src/main/webapp/VAADIN/themes/mytheme/styles.css
+/.classpath
+/.project

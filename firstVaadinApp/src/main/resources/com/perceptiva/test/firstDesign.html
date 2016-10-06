@@ -5,23 +5,23 @@
  </head> 
  <body> 
   <vaadin-vertical-layout size-full> 
-   <vaadin-horizontal-layout width-full _id="hl"> 
+   <vaadin-horizontal-layout width-full margin _id="hl"> 
     <vaadin-label size-auto plain-text _id="lblNombre">
       Nombre 
     </vaadin-label> 
-    <vaadin-combo-box item-caption-mode="id"> 
-     <option>Option 1</option> 
-     <option>Option 2</option> 
-     <option>Option 3</option> 
-    </vaadin-combo-box> 
+    <vaadin-menu-bar plain-text></vaadin-menu-bar> 
     <vaadin-button plain-text _id="btn1">
       Button 
     </vaadin-button> 
-    <vaadin-label size-auto plain-text _id="lblUsuario">
-      Usuario 
-    </vaadin-label> 
    </vaadin-horizontal-layout> 
-   <vaadin-table caption="Cosas para mostrar" _id="tblCosas1" :middle></vaadin-table> 
+   <vaadin-vertical-layout size-full :expand> 
+    <vaadin-horizontal-layout caption="peliculas para ver" width-full margin> 
+     <vaadin-image icon="http://1.bp.blogspot.com/_zc5Q7x6F2is/SgOFI2qwOGI/AAAAAAAAAqQ/J_k6xbHaORs/s320/200px-Wolverinetheatricalposter_a.jpg" _id="lblImagen1"></vaadin-image> 
+     <vaadin-image icon="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/X-Men_Days_of_Future_Past_poster.jpg/200px-X-Men_Days_of_Future_Past_poster.jpg" _id="lblImagen2"></vaadin-image> 
+     <vaadin-image icon="http://3.bp.blogspot.com/_gT2m9eX8MoM/THQ-p5RZMhI/AAAAAAAALCM/6w3LCkRCl6Q/s320/200px-Smallville-Season-9-smallville-6565079-1200-927.jpg" _id="lblImagen3"></vaadin-image> 
+     <vaadin-image icon="http://1.bp.blogspot.com/-_FrAY-xEK1I/UZ5m2e5FGII/AAAAAAAAbyE/dOFdPbcmebo/s400/200px-Robopocalypse_Book_Cover.jpg" _id="lblImagen4"></vaadin-image> 
+    </vaadin-horizontal-layout> 
+   </vaadin-vertical-layout> 
   </vaadin-vertical-layout>  
  </body>
 </html>
