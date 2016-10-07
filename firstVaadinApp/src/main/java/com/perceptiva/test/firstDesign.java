@@ -6,6 +6,7 @@ import com.vaadin.ui.Button;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Image;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.NativeButton;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.declarative.Design;
 
@@ -24,10 +25,11 @@ public class firstDesign extends VerticalLayout {
 	protected HorizontalLayout hl;
 	protected Label lblNombre;
 	protected Button btn1;
-	protected Image lblImagen1;
+	protected Label lblImagen1;
 	protected Image lblImagen2;
 	protected Image lblImagen3;
 	protected Image lblImagen4;
+	protected NativeButton btnWolverine;
 
 	public firstDesign() {
 		Design.read(this);
