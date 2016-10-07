@@ -7,8 +7,10 @@ import java.net.URISyntaxException;
 import java.net.URL;
 
 import com.perceptiva.MyUI;
+import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
+import com.vaadin.server.Page;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Label;
@@ -26,26 +28,40 @@ public class FirstDesignImpl extends firstDesign implements View {
 
 			}
 		});
-	     btnWolverine.addClickListener(new ClickListener() {
+		btnWolverine.addClickListener(new ClickListener() {
 
-				@Override
-				public void buttonClick(ClickEvent event) {
-					try {
-						
-						Runtime.getRuntime().exec("open " + new URL(
-								"http://stackoverflow.com/questions/10967451/open-a-link-in-browser-with-java-button"));
-					} catch (MalformedURLException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} 
+			@Override
+			public void buttonClick(ClickEvent event) {
+				getUI().getPage().setLocation("https://www.youtube.com/watch?v=tCyHmxMZQIQ");
 
-				}
-			});	
+			}
+		});
+		btnSuperman.addClickListener(new ClickListener() {
+
+			@Override
+			public void buttonClick(ClickEvent event) {
+				getUI().getPage().setLocation("https://www.youtube.com/watch?v=f6YNeHakAAU");
+
+			}
+		});
+		btnRobocosa.addClickListener(new ClickListener() {
+
+			@Override
+			public void buttonClick(ClickEvent event) {
+				getUI().getPage().setLocation("https://www.youtube.com/watch?v=H24Y1vycaWA");
+
+			}
+		});
+		btnXMen.addClickListener(new ClickListener() {
+
+			@Override
+			public void buttonClick(ClickEvent event) {
+				getUI().getPage().setLocation("https://www.youtube.com/watch?v=dTHQmeuP6dM");
+
+			}
+		});
+
 	}
-	
 
 	@Override
 	public void enter(ViewChangeEvent event) {
