@@ -1,4 +1,8 @@
 eclipse.preferences.version=1
 serverAddress=192.168.1.8
+<<<<<<< HEAD
+serverPort=59276
+=======
 serverPort=55233
 theme=mytheme
+>>>>>>> imagenes-1.0

@@ -4,18 +4,20 @@
   <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
  </head> 
  <body> 
-  <vaadin-vertical-layout size-full> 
+  <vaadin-vertical-layout size-full margin> 
    <vaadin-horizontal-layout width-full margin _id="hl"> 
-    <vaadin-label size-auto plain-text _id="lblNombre">
-      Nombre 
+    <vaadin-label style-name="colored huge bold" size-auto plain-text _id="lblNombre">
+      Netflix chacal 
     </vaadin-label> 
-    <vaadin-menu-bar plain-text></vaadin-menu-bar> 
-    <vaadin-button plain-text _id="btn1">
-      Button 
+    <vaadin-button plain-text _id="btnVer">
+      Ver 
+    </vaadin-button> 
+    <vaadin-button plain-text _id="btnSalir" :right>
+      Salir 
     </vaadin-button> 
    </vaadin-horizontal-layout> 
-   <vaadin-vertical-layout size-full :expand> 
-    <vaadin-horizontal-layout caption="peliculas para ver" width-full margin> 
+   <vaadin-vertical-layout visible="false" size-full _id="body" :expand> 
+    <vaadin-horizontal-layout caption="" width-full margin> 
      <vaadin-native-button icon="http://1.bp.blogspot.com/_zc5Q7x6F2is/SgOFI2qwOGI/AAAAAAAAAqQ/J_k6xbHaORs/s320/200px-Wolverinetheatricalposter_a.jpg" plain-text _id="btnWolverine"></vaadin-native-button> 
      <vaadin-native-button icon="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/X-Men_Days_of_Future_Past_poster.jpg/200px-X-Men_Days_of_Future_Past_poster.jpg" plain-text _id="btnXMen"></vaadin-native-button> 
      <vaadin-native-button icon="http://3.bp.blogspot.com/_gT2m9eX8MoM/THQ-p5RZMhI/AAAAAAAALCM/6w3LCkRCl6Q/s320/200px-Smallville-Season-9-smallville-6565079-1200-927.jpg" plain-text _id="btnSuperman"></vaadin-native-button> 

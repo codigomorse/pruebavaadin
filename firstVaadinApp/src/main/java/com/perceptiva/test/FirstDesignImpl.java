@@ -1,23 +1,30 @@
 package com.perceptiva.test;
 
-
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
-import com.vaadin.ui.Label;
+import com.vaadin.ui.Notification;
 
 public class FirstDesignImpl extends firstDesign implements View {
 
 	private static final long serialVersionUID = 1L;
 
 	public FirstDesignImpl() {
-		btn1.addClickListener(new ClickListener() {
+		btnSalir.addClickListener(new ClickListener() {
 
 			@Override
 			public void buttonClick(ClickEvent event) {
-				hl.addComponent(new Label("Hola Omar"));
+				Notification.show("Vuelva pronto!!");
+				body.setVisible(false);
+			}
+		});
+		btnVer.addClickListener(new ClickListener() {
 
+			@Override
+			public void buttonClick(ClickEvent event) {
+				Notification.show("Bienvenido!!");
+				body.setVisible(true);
 			}
 		});
 		btnWolverine.addClickListener(new ClickListener() {
